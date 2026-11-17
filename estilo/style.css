@@ -1,0 +1,176 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Special+Elite&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+  :root {
+    --cor01: #BFAE99;
+    --cor02: #60731A;
+    --cor03: #4C591C;
+    --cor04: #261D12;
+    --font01: "Parisienne", cursive;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #bfae999f;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c0808126 ;
+
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;    
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #60731a8c;
+
+    transition: widht .5s, height .5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background-color: #bfae99d8;
+    background-image: url(../imagens/pexels-chris-liu-753004655-22710982.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+
+}
+
+div#formulario > h1 {
+    font-family: var(--font01);
+    font-size: 2em;
+    color: #4C591C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #60731A;
+}
+
+form > div.campo {
+    background-color: #BFAE99;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+
+}
+
+div.campo > span {
+    color:#4C591C;
+    font-size: 1.2em;
+    border-radius: 8px;
+    width: 40px;
+    padding: 5px;
+
+}
+
+div.campo > input{
+    background-color: #BFAE99;
+    padding: 4px;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+div.campo > input:focus-within {
+    background-color: aliceblue;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #4C591C;
+    background-color: #c0808126;
+    border: 1px solid #BFAE99;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #BFAE99 ;
+    color: #261D12;
+}
+
+form > input[type=reset] {
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #4C591C;
+    background-color: #c0808126;
+    border: 1px solid #BFAE99;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+form > input[type=reset]:hover{
+    background-color: #BFAE99 ;
+    color: #261D12;
+}
+
+form > a.botao {
+    color:#4C591C;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #c0808126;
+    border: 1px solid #BFAE99;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+form > a.botao:hover{
+    background-color: #BFAE99;
+    color: #261D12;
+}
